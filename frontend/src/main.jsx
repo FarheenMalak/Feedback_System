@@ -5,7 +5,7 @@ import App from './components/App'
 import axios from 'axios';
 
 
-axios.defaults.baseURL = 'http://localhost:3000';
+axios.defaults.baseURL = 'https://feedback-system-liard.vercel.app';
 axios.defaults.withCredentials = true;
 createRoot(document.getElementById('root')).render(
   <StrictMode>
