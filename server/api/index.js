@@ -14,8 +14,9 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin: true,
-  credentials: true,
+  origin: ["https://feedback-system-56gd.vercel.app"],
+  methods: ["GET", "POST", "PUT", "DELETE"],     
+  credentials: true
 }));
 
 connectToDb();
